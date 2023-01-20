@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculadora</title>
+    <link rel="shortcut icon" href="./teclas-de-calculadora.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../calcularDias/assets/css.css">
+  </head>
+  <body>
+    <main class="contenedor-general vh-100 min-flex">
+      <div class="contenedor-secundario container">
+        <div class="row">
+          <div class="contenedor-calculadora container col-6">
+            <div class="row-pantallas row justify-content-center ">
+              <input id="dia" type="number"  class="col-12 col-sm-4 col-md-4 " placeholder="Dia" min="1" max="31" required>
+              <input id="mes" type="number"  class="col-12 col-sm-4 col-md-4" placeholder="Mes" min="1" max="12" required>
+              <input id="anio" type="number"  class="col-12 col-sm-4 col-md-4" placeholder="Año" min="2000" max="2150" required>
+              <button class="col-12 col-sm-7 col-md-5 align-self-center " onclick="mostrarResultado()">Calcular</button>
+            </div>
+            <!--botones operadores-->
+            <div class="row-pantallas row">
+                <input id="resultado" type="text" class="col-12 result" placeholder="El dia es: " readonly>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="./assets/js.js"></script>
+  </body>
+</html>
